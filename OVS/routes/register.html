@@ -1,0 +1,83 @@
+<html>
+
+        <head>
+            <title>Online Voting System-Registration</title>
+            <link rel="stylesheet" href="../css/stylesheet.css">
+        </head>
+    
+   
+    
+        <body> 
+            <center>
+            <style>
+                body{
+                    background-color: #05baff;
+                }
+                #address{
+                    width: 29.9%;
+                }
+
+                #imagePath{
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 29.9%;
+                }
+
+                #role{
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 29.9%;
+                }
+
+                #role select{
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            </style>
+
+            <div id="headerSection">
+            <h1>Online Voting System</h1>
+            </div>
+            <hr>
+
+            <div id="bodySection">
+            <h2>Registration</h2>
+    
+            <form action="../api/register.php" method="post" enctype="multipart/form-data">
+                <input type = "text" name="name" placeholder="Enter your name">
+                <input type = "number" name="mobile" placeholder="Enter your number"><br><br>
+                <input type = "password" name="password" placeholder="Password">
+                <input type = "password" name="cpassword" placeholder="conform password"><br><br>
+                <input id= "address" type = "text" name="address" placeholder="Enter your address"><br><br>
+
+                
+                    <div id="imagePath">Upload image: <input type = "file" name="photo"></div>
+
+                    <br>
+                
+                <div id="role">
+                    
+               Select your role: <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+                </div>
+                
+    
+               <br>
+                <button style=" 
+                padding: 5px;
+                background-color: #6ab04c;
+                color: white;
+                font-size: 15px;
+                border-radius: 5px;
+                ">Register</button><br><br>
+                
+                Already user? <a href="../index.html">Login here</a>
+            </form>
+            </div>
+            </center>
+        </body>
+</html>

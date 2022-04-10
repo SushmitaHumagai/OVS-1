@@ -1,0 +1,40 @@
+body{
+    
+    background-color: #05baff;
+    /*background-image: url("../routes/project.jpg"); /* The image used */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  #headerSection{
+      padding: 5px;
+  }
+
+  #headerSection h1{
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  input{
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  #dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 14%;
+  }
+
+  #loginButton{
+    padding: 5px;
+    background-color: #6ab04c;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  span{
+    color:black
+  }
